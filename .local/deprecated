@@ -1,3 +1,0 @@
-#!/bin/bash
-msg="$(printf 'deprecated called: %s\ncommand: %s\nPPID: %s\nparent cmd: %s\n' "$0" "$*" "$(ps -p $PPID | tail -n1)" "$(cat /proc/$PPID/cmdline | tr '\0' ' ')" )"
-logger -n logserver "$msg"
