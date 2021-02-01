@@ -1,3 +1,2 @@
 #!/bin/sh
-echo :0
-#find /tmp/ -maxdepth 1 -group epoch -name '.X*-lock' | tr .X -: | cut -d- -f2
+find /tmp/ -maxdepth 1 -group epoch -name '.X*-lock' | tr .X -: | cut -d- -f2
