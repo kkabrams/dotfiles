@@ -1,0 +1,186 @@
+#shits and giggles
+"exec xcalib -invert -alter"
+    mod1 + shift + i
+
+"exec x-terminal-emulator"
+    mod1 + shift + Return
+
+#a bit of windows emulation
+"exec x-screenlock"
+    mod4 + l
+
+#the dmenu-based launchers
+"exec dmenu_run"
+    mod1 + p
+"exec urilaunch"
+    mod1 + u
+"exec nohup music-search 2>&1 >/dev/null &"
+    mod1 + m
+"exec scrot2site"
+    m:0x0 + c:107
+
+### bspwm stuff:
+"exec bspc node -c"
+    mod1 + shift + c
+
+"exec bspc node focused -t floating"
+    mod4 + f
+"exec bspc node focused -t tiled"
+    mod4 + t
+"bspc node -f last ; tag-change"
+    mod1 + Tab
+"exec bspc node focused -f next.local"
+    mod1 + Return
+
+"exec bspwm-desktop-focus 1"
+    mod1 + 1
+"exec bspwm-desktop-focus 2"
+    mod1 + 2
+"exec bspwm-desktop-focus 3"
+    mod1 + 3
+"exec bspwm-desktop-focus 4"
+    mod1 + 4
+"exec bspwm-desktop-focus 5"
+    mod1 + 5
+"exec bspwm-desktop-focus 6"
+    mod1 + 6
+"exec bspwm-desktop-focus 7"
+    mod1 + 7
+"exec bspwm-desktop-focus 8"
+    mod1 + 8
+"exec bspwm-desktop-focus 9"
+    mod1 + 9
+
+"exec bspc node -d 1"
+    shift + mod1 + 1
+"exec bspc node -d 2"
+    shift + mod1 + 2
+"exec bspc node -d 3"
+    shift + mod1 + 3
+"exec bspc node -d 4"
+    shift + mod1 + 4
+"exec bspc node -d 5"
+    shift + mod1 + 5
+"exec bspc node -d 6"
+    shift + mod1 + 6
+"exec bspc node -d 7"
+    shift + mod1 + 7
+"exec bspc node -d 8"
+    shift + mod1 + 8
+"exec bspc node -d 9"
+    shift + mod1 + 9
+
+"exec bspwm-desktop-focus prev"
+    b:8
+"exec bspwm-desktop-focus next"
+    b:9
+### end of bspwm
+#mouse extra bottom for dwm
+#"exec xdotool key --window 0 Alt+minus"
+#    b:8
+#
+#mouse extra top
+#"exec xdotool key --window 0 Alt+equal"
+#    b:9
+
+"exec music-playpause"
+    XF86AudioPlay
+
+"exec volume -"
+    XF86AudioLowerVolume
+
+"exec volume +"
+    XF86AudioRaiseVolume
+
+"exec music-next"
+    XF86AudioNext
+
+"exec music-prev"
+    XF86AudioPrev
+
+"exec music-stop"
+    XF86AudioStop
+
+"exec volume toggle"
+    XF86AudioMute
+
+"exec pkill -9 -xf firefox"
+    Control + Pause
+
+"exec xdotool mousemove_relative -- 0 -50"
+    KP_Up
+
+"exec xdotool mousemove_relative -- 0 50"
+    KP_Down
+
+"exec xdotool mousemove_relative -- -50 0"
+    KP_Left
+
+"exec xdotool mousemove_relative -- 50 0"
+    KP_Right
+
+"exec xdotool mousemove_relative -- -50 -50"
+    KP_Home
+
+"exec xdotool mousemove_relative -- -50 50"
+    KP_End
+
+"exec xdotool mousemove_relative -- 50 -50"
+    KP_Prior
+
+"exec xdotool mousemove_relative -- 50 50"
+    KP_Next
+
+
+"exec xdotool mousemove_relative -- 0 -9"
+    shift + KP_Up
+
+"exec xdotool mousemove_relative -- 0 9"
+    shift + KP_Down
+
+"exec xdotool mousemove_relative -- -9 0"
+    shift + KP_Left
+
+"exec xdotool mousemove_relative -- 9 0"
+    shift + KP_Right
+
+"exec xdotool mousemove_relative -- -9 -9"
+    shift + KP_Home
+
+"exec xdotool mousemove_relative -- -9 9"
+    shift + KP_End
+
+"exec xdotool mousemove_relative -- 9 -9"
+    shift + KP_Prior
+
+"exec xdotool mousemove_relative -- 9 9"
+    shift + KP_Next
+
+#left-click
+"exec xdotool mousedown 0"
+    shift + KP_Begin
+"exec xdotool mousedown 0"
+    alt + KP_Begin
+
+"exec xdotool click 0"
+    KP_Begin
+
+#middle-click
+"exec xdotool mousedown 1"
+    shift + KP_Insert
+"exec xdotool mousedown 1"
+    alt + KP_Insert
+
+"exec xdotool click 1"
+    KP_Insert
+
+#right-click
+"exec xdotool mousedown 2"
+    shift + KP_Delete
+
+"exec xdotool mousedown 2"
+    alt + KP_Delete
+
+"exec xdotool click 2"
+    KP_Delete
+
